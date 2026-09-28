@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Wiesling Handseife Zitronenmelisse Nachfüllbeutel | Wiesling Shop</title>
+<meta name="description" content="Wiesling Handseife Zitronenmelisse im Nachfüllbeutel – mild zu den Händen, frischer Duft. Jetzt im Wiesling Shop bestellen.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#ffffff; --mint:#E8F3EA; --mint-2:#D4EAD8; --ink:#1E2A22; --ink-2:#56645B; --line:#E1E7E2;
+  --green:#1F7A45; --green-2:#17643A; --green-dark:#24472E; --lemon:#F2D04A;
+  --r:10px; --font:"Figtree","Segoe UI","Helvetica Neue",Arial,sans-serif;
+  color-scheme:light;
+}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--font);-webkit-font-smoothing:antialiased}
+img,svg{display:block;max-width:100%}
+a{color:inherit}
+button,select{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--lemon);outline-offset:2px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding:0 24px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
+/* Kopf */
+.topbar{background:var(--mint);font-size:13px;text-align:center;padding:7px 16px;color:var(--ink-2)}
+header.site{background:#fff;border-bottom:1px solid var(--line);position:sticky;top:0;z-index:20}
+.head{display:grid;grid-template-columns:auto 1fr auto;gap:28px;align-items:center;padding:14px 0}
+.brand{display:flex;align-items:center;gap:8px;text-decoration:none;font:800 27px/1 var(--font);color:var(--green-dark);letter-spacing:-.03em}
+.brand svg{width:30px;height:30px}
+.search{justify-self:center;display:flex;align-items:center;gap:10px;border:1px solid var(--line);border-radius:999px;padding:8px 16px;width:100%;max-width:440px}
+.search input{border:0;outline:none;background:transparent;font:inherit;width:100%}
+.search:focus-within{border-color:var(--green)}
+.tools{display:flex;align-items:center;gap:4px}
+.icon-btn{background:none;border:0;height:42px;min-width:42px;border-radius:999px;display:flex;align-items:center;justify-content:center;gap:6px;cursor:pointer;padding:0 8px;font-weight:600;font-size:15px}
+.icon-btn:hover{background:var(--mint)}
+.icon-btn svg{width:21px;height:21px;stroke:currentColor;fill:none;stroke-width:1.8}
+nav.main ul{list-style:none;margin:0;padding:0 0 10px;display:flex;gap:30px;flex-wrap:wrap;font-weight:600;font-size:15px}
+nav.main a{text-decoration:none;display:inline-block;padding:6px 0;border-bottom:3px solid transparent}
+nav.main a:hover,nav.main a[aria-current]{border-color:var(--green)}
+
+.crumbs{font-size:13px;color:var(--ink-2);padding:18px 0 6px}
+.crumbs a{text-decoration:none}.crumbs a:hover{text-decoration:underline}
+.crumbs span{margin:0 7px;opacity:.55}
+
+/* Produkt */
+.pdp{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,1fr);gap:56px;padding:14px 0 64px;align-items:start}
+.gallery{display:grid;grid-template-columns:86px 1fr;gap:18px;align-items:start;position:sticky;top:120px}
+.thumbs{display:flex;flex-direction:column;gap:10px}
+.thumb{border:1.5px solid var(--line);border-radius:8px;background:#fff;padding:4px;cursor:pointer;aspect-ratio:1;overflow:hidden}
+.thumb svg{width:100%;height:100%}
+.thumb[aria-pressed="true"]{border-color:var(--green);box-shadow:0 0 0 1px var(--green)}
+.stage-wrap{display:flex;flex-direction:column;align-items:center;gap:14px}
+.stage{position:relative;width:100%;aspect-ratio:1/1.02;border-radius:var(--r);background:radial-gradient(ellipse at 50% 38%,#ffffff 0 45%,#f3f5f2 100%);display:grid;place-items:center;overflow:hidden}
+.stage .art{width:74%;height:92%;display:grid;place-items:center}
+.stage .art svg{width:100%;height:100%}
+.stage .art.zoom{width:100%;height:100%}
+.arrow{position:absolute;top:50%;transform:translateY(-50%);width:42px;height:42px;border-radius:50%;border:0;background:rgba(255,255,255,.9);box-shadow:0 1px 6px rgba(0,0,0,.12);cursor:pointer;display:grid;place-items:center}
+.arrow svg{width:18px;height:18px;stroke:var(--ink);fill:none;stroke-width:2.2}
+.arrow.prev{left:12px}.arrow.next{right:12px}
+.flag{position:absolute;left:16px;top:16px;background:var(--green);color:#fff;font-weight:700;font-size:13px;padding:4px 12px;border-radius:999px}
+.dots{display:flex;gap:8px}
+.dots button{width:11px;height:11px;border-radius:50%;border:1.5px solid var(--green);background:#fff;padding:0;cursor:pointer}
+.dots button[aria-current="true"]{background:var(--green)}
+
+.info h1{font-size:clamp(28px,3vw,36px);font-weight:500;line-height:1.2;color:var(--green-2);margin:0 0 18px;letter-spacing:-.01em}
+.price{font:600 30px/1 var(--font);margin:0 0 8px}
+.unit{font-size:12.5px;letter-spacing:.04em;text-transform:uppercase;color:var(--ink-2);margin:0}
+.tax{font-size:12.5px;color:var(--ink-2);margin:2px 0 20px}
+.tax a{text-decoration:underline}
+.bullets{margin:0 0 24px;padding-left:20px;display:grid;gap:4px}
+.bullets li::marker{color:var(--green)}
+.field{margin:0 0 18px}
+.field label{display:block;font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;font-weight:700;margin-bottom:6px}
+.select{position:relative;max-width:320px}
+.select select{appearance:none;width:100%;border:1.5px solid var(--line);border-radius:8px;background:#fff;padding:12px 44px 12px 14px;font-weight:600;cursor:pointer}
+.select select:focus{border-color:var(--green);outline:none}
+.select::after{content:"";position:absolute;right:18px;top:50%;width:9px;height:9px;border-right:2px solid var(--ink);border-bottom:2px solid var(--ink);transform:translateY(-70%) rotate(45deg);pointer-events:none}
+.buy{display:flex;gap:12px;align-items:stretch;margin:0 0 16px}
+.qty{display:flex;align-items:center;border:1.5px solid var(--line);border-radius:8px;background:#fff}
+.qty button{width:40px;height:48px;border:0;background:none;font-size:20px;cursor:pointer}
+.qty output{min-width:26px;text-align:center;font-weight:700}
+.qty small{color:var(--ink-2);font-size:13px;padding-right:12px}
+.cta{flex:1;border:0;border-radius:8px;background:var(--green);color:#fff;font-weight:700;font-size:16px;min-height:50px;cursor:pointer}
+.cta:hover{background:var(--green-2)}
+.wish{display:inline-flex;align-items:center;gap:8px;background:none;border:0;padding:4px 0;font-size:14px;text-decoration:underline;cursor:pointer}
+.wish svg{width:18px;height:18px;stroke:currentColor;fill:none;stroke-width:1.8}
+.wish[aria-pressed="true"] svg{fill:var(--green);stroke:var(--green)}
+.sku{font-size:12.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--ink-2);margin:10px 0 26px}
+.sku b{color:var(--ink)}
+
+/* Akkordeon */
+.acc{border-top:1px solid var(--line)}
+.acc details{border-bottom:1px solid var(--line)}
+.acc summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 2px;font-weight:700;font-size:14px;letter-spacing:.06em;text-transform:uppercase}
+.acc summary::-webkit-details-marker{display:none}
+.acc summary::after{content:"";flex:none;width:9px;height:9px;border-right:2px solid currentColor;border-bottom:2px solid currentColor;transform:rotate(45deg);transition:transform .2s;margin-right:6px}
+.acc details[open] summary::after{transform:rotate(-135deg)}
+.acc summary:hover{color:var(--green)}
+.acc .body{padding:0 2px 20px;color:var(--ink-2);font-size:15.5px}
+.acc .body p{margin:0 0 10px}
+.acc table{border-collapse:collapse;width:100%;font-size:15px}
+.acc td{padding:8px 0;border-bottom:1px solid var(--line);vertical-align:top}
+.acc tr:last-child td{border-bottom:0}
+.acc td:first-child{font-weight:600;color:var(--ink);width:42%;padding-right:14px}
+.seals{display:grid;gap:10px;margin:0 0 24px}
+.seal{display:flex;gap:14px;align-items:center;padding:10px 12px;border:1px solid var(--line);border-radius:8px}
+.seal img,.seal svg{width:56px;height:56px;flex:none}
+.seal p{margin:0;font-size:14px;color:var(--ink-2);line-height:1.4}
+.seal strong{display:block;color:var(--ink);font-size:14.5px}
+.acc .seal-row{display:flex;gap:14px;align-items:center;margin-top:14px;padding:12px;border:1px solid var(--line);border-radius:8px}
+.acc .seal-row img{width:64px;height:64px;flex:none}
+.acc .seal-row p{margin:0;font-size:14px}
+.inci{font-size:14px;line-height:1.7}
+
+/* Weitere */
+.more{border-top:1px solid var(--line);padding:48px 0 72px}
+.more h2{font-size:26px;font-weight:600;margin:0 0 24px;color:var(--green-2)}
+.tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.tile{text-decoration:none;display:flex;flex-direction:column;gap:8px}
+.tile .img{background:radial-gradient(ellipse at 50% 40%,#fff 0 45%,#f3f5f2 100%);border-radius:var(--r);aspect-ratio:1;display:grid;place-items:center;overflow:hidden}
+.tile .img svg{width:62%;height:86%}
+.tile .tag{align-self:flex-start;background:var(--green);color:#fff;font-size:12px;font-weight:700;padding:2px 10px;border-radius:999px}
+.tile h3{font-size:15.5px;font-weight:500;margin:0;line-height:1.35}
+.tile:hover h3{text-decoration:underline}
+.tile .p{font-weight:700}.tile .p small{font-weight:400;color:var(--ink-2);margin-left:6px}
+
+footer.site{background:var(--mint);padding:48px 0 30px;font-size:15px}
+.fcols{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px}
+.fcols h4{margin:0 0 10px;font-size:15px}
+.fcols ul{list-style:none;margin:0;padding:0;display:grid;gap:5px}
+.fcols a{text-decoration:none;color:var(--ink-2)}.fcols a:hover{text-decoration:underline}
+.fcols p{margin:10px 0 0;color:var(--ink-2);max-width:32ch}
+.legal{margin-top:34px;padding-top:18px;border-top:1px solid var(--mint-2);font-size:13px;color:var(--ink-2);display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+
+.toast{visibility:hidden;position:fixed;left:50%;bottom:24px;transform:translate(-50%,140%);background:var(--ink);color:#fff;padding:13px 22px;border-radius:999px;font-weight:600;transition:transform .3s ease;z-index:50;max-width:calc(100% - 32px);text-align:center}
+.toast.show{visibility:visible;transform:translate(-50%,0)}
+
+@media (max-width:980px){
+  .pdp{grid-template-columns:1fr;gap:32px}
+  .gallery{position:static}
+  .tiles{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .fcols{grid-template-columns:1fr 1fr}
+  .head{grid-template-columns:auto auto;gap:12px}
+  .search{grid-column:1/-1;grid-row:2;max-width:none}
+  .tools{justify-self:end}
+}
+@media (max-width:560px){
+  .wrap{padding:0 16px}
+  .gallery{grid-template-columns:1fr}
+  .thumbs{flex-direction:row;order:2}
+  .thumb{width:68px}
+  nav.main ul{gap:20px;overflow-x:auto;flex-wrap:nowrap}
+  .icon-btn .lbl{display:none}
+}
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+</head>
+<body>
+
+<div class="topbar">Kostenloser Versand für Bestellungen ab 25 €</div>
+
+<header class="site">
+  <div class="wrap">
+    <div class="head">
+      <a class="brand" href="#top" aria-label="Wiesling Startseite"><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 34C6 16 18 6 36 5c0 19-10 30-28 30" fill="#8DBA5E"/><path d="M8 33C15 24 22 17 30 11" stroke="#24472E" stroke-width="2.4" fill="none" stroke-linecap="round"/></svg>wiesling</a>
+      <label class="search"><span class="sr">Suche</span>
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+        <input type="search" placeholder="Suchbegriff eingeben …">
+      </label>
+      <div class="tools">
+        <button class="icon-btn" aria-label="Warenkorb"><svg viewBox="0 0 24 24"><path d="M5 7h14l-1.5 12h-11L5 7Z"/><path d="M9 7a3 3 0 0 1 6 0"/></svg><span class="lbl" id="cartSum">0,00 €</span></button>
+        <button class="icon-btn" aria-label="Konto"><svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 21c1-4 4-6 8-6s7 2 8 6"/></svg></button>
+        <button class="icon-btn" aria-label="Merkzettel"><svg viewBox="0 0 24 24"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg></button>
+      </div>
+    </div>
+    <nav class="main" aria-label="Hauptnavigation"><ul>
+      <li><a href="#">Aktionen</a></li><li><a href="#">Putzen</a></li><li><a href="#">Waschen</a></li><li><a href="#">Spülen</a></li>
+      <li><a href="#" aria-current="page">Körperpflege</a></li><li><a href="#">Nachfüllbeutel</a></li>
+    </ul></nav>
+  </div>
+</header>
+
+<main id="top" class="wrap">
+  <p class="crumbs"><a href="#">Startseite</a><span>/</span><a href="#">Körperpflege</a><span>/</span><a href="#">Seifen</a><span>/</span>Handseife Zitronenmelisse Nachfüllbeutel</p>
+
+  <section class="pdp" aria-labelledby="ptitle">
+    <div class="gallery">
+      <div class="thumbs" role="group" aria-label="Produktbilder">
+        <button class="thumb" aria-pressed="true" data-i="0" aria-label="Vorderseite"></button>
+        <button class="thumb" aria-pressed="false" data-i="1" aria-label="Rückseite"></button>
+        <button class="thumb" aria-pressed="false" data-i="2" aria-label="Detail: Siegel Made for Recycling"></button>
+      </div>
+      <div class="stage-wrap">
+        <div class="stage">
+          <span class="flag">Neu</span>
+          <div class="art" id="art" role="img" aria-label="Wiesling Handseife Zitronenmelisse Nachfüllbeutel, Vorderseite"></div>
+          <button class="arrow prev" id="prev" aria-label="Vorheriges Bild"><svg viewBox="0 0 24 24"><path d="M15 5l-7 7 7 7"/></svg></button>
+          <button class="arrow next" id="next" aria-label="Nächstes Bild"><svg viewBox="0 0 24 24"><path d="M9 5l7 7-7 7"/></svg></button>
+        </div>
+        <div class="dots" id="dots"></div>
+      </div>
+    </div>
+
+    <div class="info">
+      <h1 id="ptitle">Wiesling Handseife Zitronen&shy;melisse Nachfüllbeutel</h1>
+      <p class="price" id="price">3,49 €</p>
+      <p class="unit" id="unit">Inhalt: 1 l (3,49 € / 1 l)</p>
+      <p class="tax"><a href="#">*Preise inkl. MwSt. zzgl. Versandkosten</a></p>
+
+      <ul class="bullets">
+        <li>mild zu den Händen</li>
+        <li>frischer Duft nach Zitronenmelisse</li>
+        <li>zum Nachfüllen deines Seifenspenders</li>
+      </ul>
+
+      <div class="seals">
+        <div class="seal"><img src="seal.png" alt="Siegel Made for Recycling – interzero"><p><strong>Made for Recycling</strong>Die Recyclingfähigkeit des Beutels wurde von Interzero bewertet.</p></div>
+        <div class="seal"><svg viewBox="0 0 64 64" role="img" aria-label="Siegel Wiesling Grünes Blatt"><circle cx="32" cy="32" r="30" fill="#24472E"/><circle cx="32" cy="32" r="24" fill="none" stroke="#8DBA5E" stroke-width="1.5" stroke-dasharray="3 3"/><g transform="translate(18 12) scale(.7)"><path d="M6 34C6 16 18 6 36 5c0 19-10 30-28 30" fill="#8DBA5E"/><path d="M8 33C15 24 22 17 30 11" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/></g><text x="32" y="52" text-anchor="middle" font-family="Figtree, Arial" font-weight="700" font-size="5.6" fill="#fff">GRÜNES BLATT</text></svg><p><strong>Wiesling Grünes Blatt</strong>Zertifiziert und nach unseren Umweltstandards bewertet.</p></div>
+      </div>
+
+      <div class="field">
+        <label for="size">Füllmenge</label>
+        <div class="select">
+          <select id="size">
+            <option value="0" data-price="1.99" data-l="0.5" data-sku="4070">500 ml – 1,99 €</option>
+            <option value="1" data-price="3.49" data-l="1" data-sku="4071" selected>1 l – 3,49 €</option>
+            <option value="2" data-price="13.99" data-l="5" data-sku="4075">5 l Vorratsbeutel – 13,99 €</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="buy">
+        <div class="qty"><button id="minus" aria-label="Menge verringern">−</button><output id="qty" aria-live="polite">1</output><button id="plus" aria-label="Menge erhöhen">+</button><small>Beutel</small></div>
+        <button class="cta" id="add">In den Warenkorb</button>
+      </div>
+      <button class="wish" id="wish" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10Z"/></svg>Zum Merkzettel hinzufügen</button>
+      <p class="sku">Artikelnummer: <b id="sku">4071</b></p>
+
+      <div class="acc">
+        <details name="acc" open><summary>Beschreibung</summary><div class="body">
+          <p>Die Wiesling Handseife Zitronenmelisse reinigt deine Hände mild und gründlich. Ihr frischer, krautig-zitroniger Duft begleitet dich nach jedem Händewaschen.</p>
+          <p>Mit dem 1-l-Nachfüllbeutel füllst du einen 500-ml-Seifenspender zweimal auf. Der Ausgießer lässt sich nach dem Einfüllen wieder fest verschließen.</p>
+          <p>Die Folie des Beutels besteht zu 50 % aus Post-Consumer-Rezyklat, bezogen auf ihr Gewicht.</p>
+          <p>Die Handseife ist klimaneutral: Die bei Herstellung und Transport entstehenden Emissionen gleichen wir über Klimaschutzprojekte aus.</p>
+          <p>Bis 2030 wird unser gesamtes Sortiment plastikfrei sein.</p>
+          <table><tr><td>Inhalt</td><td id="volCell">1 l</td></tr><tr><td>Duft</td><td>Zitronenmelisse</td></tr><tr><td>Hauttyp</td><td>für jeden Hauttyp</td></tr></table>
+        </div></details>
+        <details name="acc"><summary>Anwendung</summary><div class="body">
+          <p>Beutel am Deckel aufdrehen, Seife in deinen Spender füllen und den Beutel wieder verschließen.</p>
+          <p>Eine kleine Menge auf die feuchten Hände geben, aufschäumen und gründlich abspülen.</p>
+        </div></details>
+        <details name="acc"><summary>Inhaltsstoffe | Ingredients</summary><div class="body">
+          <p class="inci">Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Glycerin, Sodium Chloride, Coco-Glucoside, Parfum, Melissa Officinalis Leaf Extract, Citric Acid, Sodium Benzoate, Citral, Limonene.</p>
+        </div></details>
+        <details name="acc"><summary>Verpackung und Entsorgung</summary><div class="body">
+          <table>
+            <tr><td>Beutel</td><td>Polyethylen (PE), 50 % Post-Consumer-Rezyklat (bezogen auf das Gewicht der Folie)</td></tr>
+            <tr><td>Deckel und Tülle</td><td>Polyethylen (PE)</td></tr>
+            <tr><td>Entsorgung</td><td>Restentleert in die Gelbe Tonne oder den Gelben Sack</td></tr>
+          </table>
+          <div class="seal-row"><img src="seal.png" alt="Siegel Made for Recycling – interzero"><p><strong>Made for Recycling</strong><br>Die Recyclingfähigkeit des Beutels wurde von Interzero bewertet.</p></div>
+        </div></details>
+        <details name="acc"><summary>Hersteller</summary><div class="body">
+          <p>Wiesling Naturpflege GmbH, Auenweg 12, 34117 Kassel, Deutschland.</p>
+        </div></details>
+      </div>
+    </div>
+  </section>
+
+  <section class="more" aria-labelledby="mtitle">
+    <h2 id="mtitle">Weitere Lieblinge</h2>
+    <div class="tiles" id="tiles"></div>
+  </section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="fcols">
+      <div><a class="brand" href="#top">wiesling</a><p>Reinigung und Pflege für ein Zuhause, das sich gut anfühlt.</p></div>
+      <div><h4>Wiesling</h4><ul><li><a href="#">Über uns</a></li><li><a href="#">Das Nachfüllprinzip</a></li><li><a href="#">Karriere</a></li></ul></div>
+      <div><h4>Kundenservice</h4><ul><li><a href="#">FAQ</a></li><li><a href="#">Versand</a></li><li><a href="#">Retoure</a></li><li><a href="#">Kontakt</a></li></ul></div>
+      <div><h4>Rechtliches</h4><ul><li><a href="#">Impressum</a></li><li><a href="#">AGB</a></li><li><a href="#">Datenschutz</a></li><li><a href="#">Widerrufsrecht</a></li></ul></div>
+    </div>
+    <div class="legal"><span>Alle Preise inkl. gesetzl. Mehrwertsteuer zzgl. Versandkosten.</span><span>Demo-Shop einer fiktiven Marke für Schulungszwecke.</span></div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+(function(){
+  const SEAL = 'seal.png';
+  let uid = 0;
+
+  /* ---------- realistische Beutel-Darstellung ---------- */
+  const OUTLINE = 'M110,120 L490,120 Q504,120 505,134 Q521,370 517,580 Q516,712 474,748 Q300,788 126,748 Q84,712 83,580 Q79,370 95,134 Q96,120 110,120 Z';
+
+  function leaf(x, y, len, wid, rot, g){
+    const n = 28, R = [];
+    for (let i = 0; i <= n; i++){
+      const t = i / n;
+      let w = wid * Math.pow(Math.sin(Math.PI * Math.min(t * 1.04, 1)), 0.85) * (1 - 0.18 * t);
+      if (i % 2) w *= 0.9;
+      R.push([w, -len * t]);
+    }
+    let d = 'M0,0';
+    R.forEach(p => d += ` L${p[0].toFixed(1)},${p[1].toFixed(1)}`);
+    for (let i = R.length - 1; i >= 0; i--) d += ` L${(-R[i][0]).toFixed(1)},${R[i][1].toFixed(1)}`;
+    d += 'Z';
+    let veins = '';
+    for (let k = 1; k <= 5; k++){
+      const t = k / 6.3, yy = -len * t, ww = wid * 0.78 * Math.sin(Math.PI * t);
+      veins += `M0,${yy.toFixed(1)} Q${(ww*.45).toFixed(1)},${(yy-len*.05).toFixed(1)} ${ww.toFixed(1)},${(yy-len*.11).toFixed(1)} M0,${yy.toFixed(1)} Q${(-ww*.45).toFixed(1)},${(yy-len*.05).toFixed(1)} ${(-ww).toFixed(1)},${(yy-len*.11).toFixed(1)} `;
+    }
+    return `<g transform="translate(${x} ${y}) rotate(${rot})" filter="url(#${g}-soft)">
+      <path d="${d}" fill="url(#${g}-leaf)"/>
+      <path d="${d}" fill="url(#${g}-leafsheen)" opacity=".7"/>
+      <path d="M0,0 L0,${(-len*.96).toFixed(1)}" stroke="#bfe08f" stroke-width="2.6" stroke-linecap="round" opacity=".85"/>
+      <path d="${veins}" stroke="#b5d986" stroke-width="1.4" fill="none" opacity=".65"/>
+    </g>`;
+  }
+
+  function fruit(cx, cy, r, c, g){
+    let seg = '';
+    const n = 10;
+    for (let i = 0; i < n; i++){
+      const a0 = (i / n) * Math.PI * 2 + 0.07, a1 = ((i + 1) / n) * Math.PI * 2 - 0.07, ri = r * 0.12, ro = r * 0.8;
+      const p = (a, rr) => `${(cx + Math.cos(a) * rr).toFixed(1)},${(cy + Math.sin(a) * rr).toFixed(1)}`;
+      seg += `<path d="M${p(a0, ri)} L${p(a0, ro)} A${ro},${ro} 0 0 1 ${p(a1, ro)} L${p(a1, ri)} Z" fill="url(#${g}-pulp)"/>`;
+    }
+    return `<g filter="url(#${g}-soft)">
+      <circle cx="${cx}" cy="${cy}" r="${r}" fill="url(#${g}-rind)"/>
+      <circle cx="${cx}" cy="${cy}" r="${r*0.9}" fill="${c.pith}"/>
+      ${seg}
+      <ellipse cx="${cx - r*0.3}" cy="${cy - r*0.35}" rx="${r*0.28}" ry="${r*0.14}" fill="#fff" opacity=".45" transform="rotate(-35 ${cx - r*0.3} ${cy - r*0.35})"/>
+    </g>`;
+  }
+
+  function wrapLines(str, max){
+    const out = []; let line = '';
+    str.split(' ').forEach(w => { if ((line + ' ' + w).trim().length > max){ out.push(line.trim()); line = w; } else line += ' ' + w; });
+    if (line.trim()) out.push(line.trim());
+    return out;
+  }
+
+  function frontPrint(o, g){
+    const deco = (o.fruit ? fruit(362, 372, 58, o.fruit, g) : '') +
+      leaf(262, 452, 158, 46, -30, g) + leaf(282, 456, 132, 40, 14, g) + leaf(250, 454, 92, 28, -72, g) +
+      `<path d="M266,458 Q262,470 258,486" stroke="#5c7f3a" stroke-width="5" stroke-linecap="round" fill="none"/>`;
+    return `
+      <text x="300" y="238" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="800" font-size="62" letter-spacing="-2" fill="${o.band}">wiesling</text>
+      <text x="300" y="268" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="600" font-size="15" letter-spacing="6" fill="${o.band}" opacity=".75">SENSES</text>
+      ${deco}
+      <path d="M70,488 C200,440 390,520 530,458 L530,800 L70,800 Z" fill="url(#${g}-band)"/>
+      <path d="M70,488 C200,440 390,520 530,458" stroke="${o.acc}" stroke-width="7" fill="none"/>
+      <text x="300" y="578" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="800" font-size="${o.name.length > 10 ? 54 : 64}" letter-spacing="-1" fill="#fff">${o.name}</text>
+      <text x="300" y="618" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="500" font-size="30" fill="${o.sub2 || '#e3efd9'}">${o.sub}</text>
+      <rect x="216" y="640" width="168" height="34" rx="17" fill="${o.acc}"/>
+      <text x="300" y="663" text-anchor="middle" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="15" letter-spacing="1.5" fill="#1e2a22">NACHFÜLLBEUTEL</text>
+      <text x="128" y="728" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="30" fill="#fff">${o.size} <tspan font-size="24">℮</tspan></text>
+      <rect x="390" y="660" width="86" height="86" rx="8" fill="#fff"/>
+      <image href="${SEAL}" x="393" y="663" width="80" height="80"/>
+      <g transform="translate(140 642) scale(.9)"><circle cx="32" cy="32" r="31" fill="#fff"/><circle cx="32" cy="32" r="28" fill="#24472E"/><circle cx="32" cy="32" r="23" fill="none" stroke="#8DBA5E" stroke-width="1.5" stroke-dasharray="3 3"/><g transform="translate(18 12) scale(.7)"><path d="M6 34C6 16 18 6 36 5c0 19-10 30-28 30" fill="#8DBA5E"/><path d="M8 33C15 24 22 17 30 11" stroke="#fff" stroke-width="2.4" fill="none" stroke-linecap="round"/></g><text x="32" y="51" text-anchor="middle" font-family="Figtree,Arial" font-weight="700" font-size="5.4" fill="#fff">GRÜNES BLATT</text></g>`;
+  }
+
+  function backPrint(o, g){
+    const inci = wrapLines('Ingredients: Aqua, Sodium Laureth Sulfate, Cocamidopropyl Betaine, Glycerin, Sodium Chloride, Coco-Glucoside, Parfum, Melissa Officinalis Leaf Extract, Citric Acid, Sodium Benzoate, Citral, Limonene.', 52);
+    const use = wrapLines('Anwendung: Beutel am Deckel öffnen, Seife in den Spender füllen und Beutel wieder verschließen. Kleine Menge auf die feuchten Hände geben, aufschäumen und abspülen.', 52);
+    const t = (arr, y0, fs, lh, fill, w) => arr.map((l, i) => `<text x="128" y="${y0 + i*lh}" font-family="Figtree,Arial,sans-serif" font-size="${fs}" font-weight="${w||400}" fill="${fill}">${l}</text>`).join('');
+    let bars = '', bx = 350;
+    [3,2,4,2,3,5,2,3,2,4,2,3,4,2,5,3,2,4].forEach((w, i) => { if (i % 2 === 0) bars += `<rect x="${bx}" y="642" width="${w}" height="62" fill="#1e2a22"/>`; bx += w + 2; });
+    return `
+      <text x="128" y="222" font-family="Figtree,Arial,sans-serif" font-weight="800" font-size="30" fill="${o.band}">wiesling</text>
+      <text x="128" y="256" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="19" fill="#1e2a22">${o.name} ${o.sub}</text>
+      <text x="128" y="280" font-family="Figtree,Arial,sans-serif" font-size="14" fill="#56645b">Nachfüllbeutel für Seifenspender</text>
+      ${t(use, 324, 13.5, 20, '#33413a')}
+      ${t(inci, 324 + use.length*20 + 18, 13.5, 20, '#33413a')}
+      <path d="M70,590 C200,572 390,604 530,580 L530,800 L70,800 Z" fill="#f1f5ef"/>
+      <g transform="translate(128 628)">
+        <path d="M22,0 L44,38 L0,38 Z" fill="none" stroke="#1e2a22" stroke-width="3" stroke-linejoin="round"/>
+        <text x="22" y="32" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="13" fill="#1e2a22">04</text>
+        <text x="22" y="58" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#1e2a22">PE-LD</text>
+      </g>
+      <rect x="190" y="624" width="70" height="70" rx="6" fill="#fff"/>
+      <image href="${SEAL}" x="193" y="627" width="64" height="64"/>
+      <g transform="translate(282 636)"><path d="M4,10 h34 v30 h-34 z M0,10 h42" fill="none" stroke="#1e2a22" stroke-width="2.4"/><path d="M10,10 q11,-12 22,0" fill="none" stroke="#1e2a22" stroke-width="2.4"/><text x="21" y="33" text-anchor="middle" font-family="Arial,sans-serif" font-weight="700" font-size="12" fill="#1e2a22">12M</text></g>
+      <rect x="342" y="634" width="130" height="86" rx="4" fill="#fff"/>${bars}
+      <text x="407" y="716" text-anchor="middle" font-family="Arial,sans-serif" font-size="11" letter-spacing="1.5" fill="#1e2a22">4 012345 678901</text>
+      <text x="128" y="732" font-family="Figtree,Arial,sans-serif" font-size="12" fill="#56645b">Wiesling Naturpflege GmbH · Auenweg 12 · 34117 Kassel</text>
+      <text x="128" y="712" font-family="Figtree,Arial,sans-serif" font-weight="700" font-size="20" fill="#1e2a22">${o.size} ℮</text>`;
+  }
+
+  function pouch(opts, view, vb){
+    const o = Object.assign({band:'#24472E', band2:'#356b43', acc:'#F2D04A', name:'Handseife', sub:'Zitronenmelisse', size:'1 l',
+      fruit:{r1:'#f9dc5c', r2:'#e0a91c', pith:'#fdf8e4', p1:'#fff3b0', p2:'#f5c63a'}, cap1:'#f6dc5c', cap2:'#c99f17'}, opts);
+    const g = 'pw' + (uid++);
+    const print = view === 'back' ? backPrint(o, g) : frontPrint(o, g);
+    return `<svg viewBox="${vb || '0 0 600 820'}" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid meet" aria-hidden="true">
+<defs>
+  <clipPath id="${g}-clip"><path d="${OUTLINE}"/></clipPath>
+  <linearGradient id="${g}-shade" x1="0" x2="1">
+    <stop offset="0" stop-color="#000" stop-opacity=".30"/><stop offset=".06" stop-color="#000" stop-opacity=".10"/>
+    <stop offset=".2" stop-color="#000" stop-opacity="0"/><stop offset=".29" stop-color="#fff" stop-opacity=".0"/>
+    <stop offset=".34" stop-color="#fff" stop-opacity=".38"/><stop offset=".40" stop-color="#fff" stop-opacity="0"/>
+    <stop offset=".72" stop-color="#000" stop-opacity="0"/><stop offset=".9" stop-color="#000" stop-opacity=".12"/>
+    <stop offset="1" stop-color="#000" stop-opacity=".34"/>
+  </linearGradient>
+  <linearGradient id="${g}-vshade" x1="0" y1="0" x2="0" y2="1">
+    <stop offset="0" stop-color="#000" stop-opacity="0"/><stop offset=".08" stop-color="#000" stop-opacity=".0"/>
+    <stop offset=".095" stop-color="#000" stop-opacity=".16"/><stop offset=".16" stop-color="#000" stop-opacity="0"/>
+    <stop offset=".82" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".30"/>
+  </linearGradient>
+  <linearGradient id="${g}-band" x1="0" y1="0" x2="0.35" y2="1"><stop offset="0" stop-color="${o.band2}"/><stop offset="1" stop-color="${o.band}"/></linearGradient>
+  <linearGradient id="${g}-cap" x1="0" x2="1">
+    <stop offset="0" stop-color="${o.cap2}"/><stop offset=".3" stop-color="${o.cap1}"/><stop offset=".42" stop-color="#fff7c9"/>
+    <stop offset=".55" stop-color="${o.cap1}"/><stop offset="1" stop-color="${o.cap2}"/>
+  </linearGradient>
+  <linearGradient id="${g}-neck" x1="0" x2="1"><stop offset="0" stop-color="#cfd6cc"/><stop offset=".4" stop-color="#f7f9f5"/><stop offset="1" stop-color="#bcc4b9"/></linearGradient>
+  <linearGradient id="${g}-leaf" x1="0" x2="1"><stop offset="0" stop-color="#4f8a2e"/><stop offset=".5" stop-color="#7fb64c"/><stop offset="1" stop-color="#3f7626"/></linearGradient>
+  <linearGradient id="${g}-leafsheen" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".55" stop-color="#fff" stop-opacity=".18"/><stop offset="1" stop-color="#fff" stop-opacity="0"/></linearGradient>
+  ${o.fruit ? `<radialGradient id="${g}-rind" cx=".4" cy=".35" r=".7"><stop offset="0" stop-color="${o.fruit.r1}"/><stop offset="1" stop-color="${o.fruit.r2}"/></radialGradient>
+  <radialGradient id="${g}-pulp" gradientUnits="userSpaceOnUse" cx="362" cy="372" r="48"><stop offset="0" stop-color="${o.fruit.p1}"/><stop offset="1" stop-color="${o.fruit.p2}"/></radialGradient>` : ''}
+  <pattern id="${g}-crimp" width="5" height="10" patternUnits="userSpaceOnUse"><rect width="1.6" height="10" fill="#000" opacity=".09"/></pattern>
+  <pattern id="${g}-ridge" width="6" height="10" patternUnits="userSpaceOnUse"><rect width="2.6" height="10" fill="#000" opacity=".16"/></pattern>
+  <filter id="${g}-b16" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="16"/></filter>
+  <filter id="${g}-b6" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="6"/></filter>
+  <filter id="${g}-b2"><feGaussianBlur stdDeviation="2"/></filter>
+  <filter id="${g}-soft" x="-20%" y="-20%" width="140%" height="140%"><feDropShadow dx="0" dy="3" stdDeviation="3" flood-color="#000" flood-opacity=".22"/></filter>
+</defs>
+<ellipse cx="300" cy="770" rx="230" ry="20" fill="#000" opacity=".22" filter="url(#${g}-b16)"/>
+<ellipse cx="300" cy="762" rx="175" ry="7" fill="#000" opacity=".28" filter="url(#${g}-b6)"/>
+<g clip-path="url(#${g}-clip)">
+  <rect x="60" y="100" width="480" height="720" fill="#fbfcf9"/>
+  ${print}
+  <rect x="60" y="112" width="480" height="62" fill="#eef1ea" opacity=".88"/>
+  <rect x="60" y="112" width="480" height="62" fill="url(#${g}-crimp)"/>
+  <rect x="60" y="173" width="480" height="2" fill="#000" opacity=".12"/>
+  <path d="M92,150 l14,6 -14,6 Z" fill="#fff" stroke="#000" stroke-opacity=".15"/>
+  <rect x="60" y="100" width="480" height="720" fill="url(#${g}-shade)"/>
+  <rect x="60" y="100" width="480" height="720" fill="url(#${g}-vshade)"/>
+  <path d="M190,200 C176,380 170,560 188,720" stroke="#fff" stroke-width="22" opacity=".45" fill="none" stroke-linecap="round" filter="url(#${g}-b6)"/>
+  <path d="M430,190 C442,360 446,520 436,690" stroke="#fff" stroke-width="8" opacity=".35" fill="none" stroke-linecap="round" filter="url(#${g}-b6)"/>
+  <path d="M110,690 C170,712 230,700 262,742 M500,670 C450,700 400,706 360,746 M120,210 C160,230 200,220 240,236" stroke="#000" stroke-width="3" opacity=".10" fill="none" filter="url(#${g}-b2)"/>
+  <path d="M112,694 C172,716 232,704 264,746 M498,674 C448,704 398,710 358,750" stroke="#fff" stroke-width="2.5" opacity=".35" fill="none" filter="url(#${g}-b2)"/>
+  <path d="M112,740 Q300,700 488,740" stroke="#000" stroke-width="3" opacity=".12" fill="none" filter="url(#${g}-b2)"/>
+</g>
+<path d="${OUTLINE}" fill="none" stroke="#000" stroke-opacity=".14" stroke-width="1.5"/>
+<g>
+  <rect x="356" y="104" width="116" height="18" rx="6" fill="url(#${g}-neck)" opacity=".95"/>
+  <rect x="380" y="80" width="68" height="28" rx="3" fill="url(#${g}-neck)"/>
+  <rect x="366" y="92" width="96" height="8" rx="3" fill="url(#${g}-neck)"/>
+  <rect x="370" y="14" width="88" height="70" rx="9" fill="url(#${g}-cap)"/>
+  <rect x="370" y="22" width="88" height="56" fill="url(#${g}-ridge)"/>
+  <rect x="370" y="14" width="88" height="10" rx="5" fill="#fff" opacity=".35"/>
+  <rect x="370" y="76" width="88" height="8" rx="3" fill="#000" opacity=".14"/>
+</g>
+</svg>`;
+  }
+
+  /* ---------- Galerie ---------- */
+  const sizeSel = document.getElementById('size');
+  const labels = ['Vorderseite', 'Rückseite', 'Detail: Siegel Made for Recycling'];
+  const curSize = () => { const l = parseFloat(sizeSel.selectedOptions[0].dataset.l); return l < 1 ? (l * 1000) + ' ml' : l + ' l'; };
+  const views = () => [
+    pouch({size: curSize()}, 'front'),
+    pouch({size: curSize()}, 'back'),
+    pouch({size: curSize()}, 'front', '350 620 170 170')
+  ];
+  const art = document.getElementById('art'), thumbs = [...document.querySelectorAll('.thumb')], dots = document.getElementById('dots');
+  let idx = 0;
+  labels.forEach((l, i) => { const b = document.createElement('button'); b.setAttribute('aria-label', 'Bild ' + (i + 1) + ': ' + l); b.onclick = () => show(i); dots.appendChild(b); });
+  function renderThumbs(){ const v = views(); thumbs.forEach((t, i) => t.innerHTML = v[i]); }
+  function show(i){
+    idx = (i + labels.length) % labels.length;
+    art.innerHTML = views()[idx];
+    art.classList.toggle('zoom', idx === 2);
+    art.setAttribute('aria-label', 'Wiesling Handseife Zitronenmelisse Nachfüllbeutel, ' + labels[idx]);
+    thumbs.forEach((t, k) => t.setAttribute('aria-pressed', k === idx));
+    [...dots.children].forEach((d, k) => d.setAttribute('aria-current', k === idx));
+  }
+  thumbs.forEach((t, i) => t.onclick = () => show(i));
+  document.getElementById('prev').onclick = () => show(idx - 1);
+  document.getElementById('next').onclick = () => show(idx + 1);
+  renderThumbs(); show(0);
+
+  /* ---------- Kaufbox ---------- */
+  const fmt = n => n.toFixed(2).replace('.', ',') + ' €';
+  let qty = 1, cartSum = 0;
+  const qtyEl = document.getElementById('qty');
+  function renderPrice(){
+    const op = sizeSel.selectedOptions[0], p = parseFloat(op.dataset.price), l = parseFloat(op.dataset.l);
+    document.getElementById('price').textContent = fmt(p);
+    document.getElementById('unit').textContent = 'Inhalt: ' + curSize() + ' (' + fmt(p / l) + ' / 1 l)';
+    document.getElementById('sku').textContent = op.dataset.sku;
+    document.getElementById('volCell').textContent = curSize();
+    qtyEl.textContent = qty;
+  }
+  sizeSel.onchange = () => { renderPrice(); renderThumbs(); show(idx); };
+  document.getElementById('plus').onclick = () => { qty = Math.min(20, qty + 1); renderPrice(); };
+  document.getElementById('minus').onclick = () => { qty = Math.max(1, qty - 1); renderPrice(); };
+  const toast = document.getElementById('toast'); let tm;
+  document.getElementById('add').onclick = () => {
+    cartSum += qty * parseFloat(sizeSel.selectedOptions[0].dataset.price);
+    document.getElementById('cartSum').textContent = fmt(cartSum);
+    toast.textContent = qty + ' × Handseife Zitronenmelisse ' + curSize() + ' im Warenkorb';
+    toast.classList.add('show'); clearTimeout(tm); tm = setTimeout(() => toast.classList.remove('show'), 2600);
+  };
+  const wish = document.getElementById('wish');
+  wish.onclick = () => wish.setAttribute('aria-pressed', wish.getAttribute('aria-pressed') !== 'true');
+  renderPrice();
+
+  /* ---------- Weitere Lieblinge ---------- */
+  const more = [
+    {o:{name:'Duschgel', sub:'Minze', size:'750 ml', band:'#1d5a5c', band2:'#2b7f7d', acc:'#9fe0c9', sub2:'#d5f1ea', fruit:null, cap1:'#bfe9dc', cap2:'#6fb7a3'}, t:'Duschgel Minze Nachfüllbeutel', p:'3,29 €', u:'750 ml (4,39 € / 1 l)', tag:'Neu'},
+    {o:{name:'Cremeseife', sub:'Mandel', band:'#7a5536', band2:'#9b714b', acc:'#f1dcc0', sub2:'#f6e9d8', fruit:null, cap1:'#f3e3cc', cap2:'#b9946c'}, t:'Cremeseife Mandel Nachfüllbeutel', p:'3,49 €', u:'1 l (3,49 € / 1 l)'},
+    {o:{name:'Spülmittel', sub:'Zitrone', band:'#b08a12', band2:'#d4a91e', acc:'#fff1a8', sub2:'#fff6cf'}, t:'Spülmittel Zitrone Nachfüllbeutel', p:'2,79 €', u:'1 l (2,79 € / 1 l)'},
+    {o:{name:'Handseife', sub:'Lavendel', band:'#5b4a86', band2:'#7a67a8', acc:'#e1d6f5', sub2:'#ece5fa', fruit:null, cap1:'#e6ddf6', cap2:'#9c8cc4'}, t:'Handseife Lavendel Nachfüllbeutel', p:'3,49 €', u:'1 l (3,49 € / 1 l)'}
+  ];
+  document.getElementById('tiles').innerHTML = more.map(m =>
+    `<a class="tile" href="#"><div class="img" role="img" aria-label="${m.t}">${pouch(m.o, 'front')}</div>${m.tag ? `<span class="tag">${m.tag}</span>` : ''}<h3>Wiesling ${m.t}</h3><span class="p">${m.p} <small>${m.u}</small></span></a>`
+  ).join('');
+})();
+</script>
+</body>
+</html>
